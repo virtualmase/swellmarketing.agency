@@ -1,0 +1,147 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.page { display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 600px; }
+.left { padding: 2rem; border-right: 0.5px solid var(--color-border-tertiary); }
+.right { padding: 2rem; background: var(--color-background-secondary); }
+.brand { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; }
+.offer-title { font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.4rem; }
+.offer-sub { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 1.5rem; line-height: 1.5; }
+.price-block { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 1.25rem; }
+.price-row { display: flex; justify-content: space-between; align-items: baseline; }
+.price-main { font-size: 28px; font-weight: 500; color: var(--color-text-primary); }
+.price-cadence { font-size: 13px; color: var(--color-text-secondary); }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0.75rem 0; }
+.line-item { display: flex; justify-content: space-between; font-size: 13px; padding: 3px 0; color: var(--color-text-secondary); }
+.line-item span:last-child { color: var(--color-text-primary); font-weight: 500; }
+.includes-title { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.6rem; }
+.includes-list { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-bottom: 1.25rem; }
+.includes-list li { font-size: 13px; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 8px; }
+.includes-list li i { color: #1D9E75; font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+.trust-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.trust-pill { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-text-secondary); }
+.trust-pill i { font-size: 14px; }
+.section-label { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.6rem; }
+.form-group { margin-bottom: 0.9rem; }
+.form-group label { display: block; font-size: 13px; color: var(--color-text-secondary); margin-bottom: 4px; }
+.form-group input { width: 100%; height: 36px; padding: 0 10px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: var(--color-background-primary); color: var(--color-text-primary); font-size: 14px; font-family: var(--font-sans); outline: none; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.card-mock { background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 0.6rem 0.75rem; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.9rem; }
+.card-mock-left { font-size: 14px; color: var(--color-text-secondary); letter-spacing: 0.08em; }
+.card-badges { display: flex; gap: 4px; }
+.card-badge { font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 3px; }
+.visa { background: #1A1F71; color: #fff; }
+.mc { background: #EB001B; color: #fff; }
+.amex { background: #2E77BC; color: #fff; }
+.cta-btn { width: 100%; padding: 0.8rem; background: #0F6E56; color: #E1F5EE; border: none; border-radius: var(--border-radius-md); font-size: 15px; font-weight: 500; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font-sans); margin-bottom: 0.6rem; }
+.cta-btn:hover { background: #085041; }
+.fine-print { font-size: 11px; color: var(--color-text-secondary); text-align: center; line-height: 1.5; }
+.fine-print a { color: var(--color-text-secondary); text-decoration: underline; }
+.stripe-note { display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 11px; color: var(--color-text-secondary); margin-top: 1rem; }
+.delivery-note { background: var(--color-background-info); border: 0.5px solid var(--color-border-info); border-radius: var(--border-radius-md); padding: 0.6rem 0.75rem; font-size: 12px; color: var(--color-text-info); display: flex; gap: 7px; align-items: flex-start; margin-bottom: 1.25rem; }
+</style>
+
+<h2 class="sr-only">GEO Starter Retainer checkout page for Swell Marketing Agency — $1,500/month.</h2>
+
+<div class="page">
+  <div class="left">
+    <div class="brand"><i class="ti ti-waves" aria-hidden="true"></i> swellmarketing.agency</div>
+
+    <p class="offer-title">GEO Starter Retainer</p>
+    <p class="offer-sub">AI citation audit + entity optimization + monthly reporting. Your brand, visible where it matters.</p>
+
+    <div class="price-block">
+      <div class="price-row">
+        <span class="price-main">$1,500</span>
+        <span class="price-cadence">/ month · cancel anytime</span>
+      </div>
+      <hr class="divider">
+      <div class="line-item"><span>First billing</span><span>Today</span></div>
+      <div class="line-item"><span>Onboarding call</span><span>Within 24 hrs</span></div>
+      <div class="line-item"><span>First report</span><span>Day 5</span></div>
+    </div>
+
+    <p class="includes-title">What's included</p>
+    <ul class="includes-list">
+      <li><i class="ti ti-check" aria-hidden="true"></i> Monthly AI citation & GEO audit</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i> Entity authority gap analysis</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i> Schema + structured data fixes</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i> Monthly performance report (Atlas format)</li>
+      <li><i class="ti ti-check" aria-hidden="true"></i> Dedicated Atlas team lead</li>
+    </ul>
+
+    <div class="delivery-note">
+      <i class="ti ti-clock" style="font-size:14px; flex-shrink:0; margin-top:1px;" aria-hidden="true"></i>
+      <span>First deliverable in 5 business days. Kickoff call scheduled within 24 hours of payment.</span>
+    </div>
+
+    <div class="trust-row">
+      <span class="trust-pill"><i class="ti ti-shield-check" aria-hidden="true"></i> SSL secured</span>
+      <span class="trust-pill"><i class="ti ti-refresh" aria-hidden="true"></i> Cancel anytime</span>
+      <span class="trust-pill"><i class="ti ti-users" aria-hidden="true"></i> 40+ brands served</span>
+    </div>
+  </div>
+
+  <div class="right">
+    <p class="section-label">Payment info</p>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>First name</label>
+        <input type="text" placeholder="Jane" />
+      </div>
+      <div class="form-group">
+        <label>Last name</label>
+        <input type="text" placeholder="Smith" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Work email</label>
+      <input type="email" placeholder="jane@company.com" />
+    </div>
+
+    <div class="form-group">
+      <label>Company <span style="color: var(--color-text-secondary); font-weight:400;">(optional)</span></label>
+      <input type="text" placeholder="Acme Inc." />
+    </div>
+
+    <hr class="divider" style="margin: 1rem 0;">
+    <p class="section-label">Card details</p>
+
+    <div class="card-mock">
+      <span class="card-mock-left">•••• •••• •••• 4242</span>
+      <div class="card-badges">
+        <span class="card-badge visa">VISA</span>
+        <span class="card-badge mc">MC</span>
+        <span class="card-badge amex">AMEX</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Expiry</label>
+        <input type="text" placeholder="MM / YY" />
+      </div>
+      <div class="form-group">
+        <label>CVC</label>
+        <input type="text" placeholder="•••" />
+      </div>
+    </div>
+
+    <button class="cta-btn" onclick="sendPrompt('Generate the HTML for the GEO Starter thank you page that follows this checkout.')">
+      Complete purchase — $1,500 / mo <i class="ti ti-arrow-right" aria-hidden="true"></i>
+    </button>
+
+    <p class="fine-print">
+      By completing your purchase you agree to our <a href="#">Terms of Service</a> and <a href="#">Refund Policy</a>.<br>
+      Billed monthly. Cancel anytime — no penalty.
+    </p>
+
+    <div class="stripe-note">
+      <i class="ti ti-lock" style="font-size:13px;" aria-hidden="true"></i>
+      Secured by Stripe · PCI DSS compliant
+    </div>
+  </div>
+</div>
