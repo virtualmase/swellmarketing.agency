@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Swell Marketing Agency — GEO retainers, entity builds, and white-label fulfillment for brands that need to be found by AI.">
+<meta name="base:app_id" content="6a1834c7660a3f727dea7030" />
+<meta name="base:app_id" content="6a0ada777abfff0aca7b16f5" />
+<title>Pricing — Swell Marketing Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal-deep: #04342C;
+    --teal-mid: #0F6E56;
+    --teal-bright: #1D9E75;
+    --teal-light: #5DCAA5;
+    --teal-pale: #E1F5EE;
+    --ink: #0D1A14;
+    --ink-60: rgba(13,26,20,.6);
+    --ink-20: rgba(13,26,20,.12);
+    --surface: #F7FBF9;
+    --white: #FFFFFF;
+    --accent: #0F6E56;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--surface);
+    color: var(--ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    background: rgba(247,251,249,.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--ink-20);
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--teal-deep);
+    text-decoration: none;
+    letter-spacing: -.01em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--ink-60);
+    text-decoration: none;
+    letter-spacing: .02em;
+    transition: color .2s;
+  }
+
+  .nav-links a:hover { color: var(--ink); }
+
+  .nav-cta {
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--white) !important;
+    background: var(--teal-mid);
+    padding: .45rem 1.1rem;
+    border-radius: 100px;
+    transition: background .2s !important;
+  }
+
+  .nav-cta:hover { background: var(--teal-deep) !important; color: var(--white) !important; }
+
+  /* HERO */
+  .hero {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 5rem 2rem 3.5rem;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--teal-bright);
+    background: var(--teal-pale);
+    padding: .3rem .9rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.1;
+    color: var(--teal-deep);
+    margin-bottom: 1.25rem;
+    letter-spacing: -.02em;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--teal-bright);
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--ink-60);
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  /* SECTION LABELS */
+  .section-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid var(--ink-20);
+  }
+
+  .section-header h2 {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--teal-deep);
+    font-weight: 400;
+  }
+
+  .section-header span {
+    font-size: .8rem;
+    color: var(--ink-60);
+    font-weight: 300;
+  }
+
+  /* CARDS GRID */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--ink-20);
+    border: 1px solid var(--ink-20);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background: var(--white);
+    padding: 1.75rem 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    transition: background .2s;
+  }
+
+  .card:hover { background: #FAFFFE; }
+
+  .card.featured {
+    background: var(--teal-deep);
+  }
+
+  .card.featured:hover { background: #062E24; }
+
+  .card-badge {
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--teal-mid);
+    background: var(--teal-pale);
+    display: inline-block;
+    padding: .2rem .65rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    width: fit-content;
+  }
+
+  .card.featured .card-badge {
+    background: rgba(255,255,255,.15);
+    color: #9FE1CB;
+  }
+
+  .card-name {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--teal-deep);
+    line-height: 1.2;
+    margin-bottom: .6rem;
+  }
+
+  .card.featured .card-name { color: var(--white); }
+
+  .card-price {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--teal-deep);
+    letter-spacing: -.03em;
+    line-height: 1;
+    margin-bottom: .2rem;
+  }
+
+  .card.featured .card-price { color: var(--white); }
+
+  .card-cadence {
+    font-size: .8rem;
+    color: var(--ink-60);
+    margin-bottom: 1.1rem;
+    font-weight: 300;
+  }
+
+  .card.featured .card-cadence { color: rgba(255,255,255,.5); }
+
+  .card-divider {
+    border: none;
+    border-top: 1px solid var(--ink-20);
+    margin-bottom: 1rem;
+  }
+
+  .card.featured .card-divider { border-color: rgba(255,255,255,.15); }
+
+  .card-desc {
+    font-size: .875rem;
+    font-weight: 300;
+    color: var(--ink-60);
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .card.featured .card-desc { color: rgba(255,255,255,.65); }
+
+  .card-cta {
+    display: block;
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 500;
+    padding: .65rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .2s;
+    letter-spacing: .01em;
+  }
+
+  .card-cta-outline {
+    border: 1px solid var(--ink-20);
+    color: var(--teal-deep);
+    background: transparent;
+  }
+
+  .card-cta-outline:hover {
+    border-color: var(--teal-mid);
+    color: var(--teal-mid);
+    background: var(--teal-pale);
+  }
+
+  .card-cta-solid {
+    background: var(--teal-bright);
+    color: var(--white);
+    border: 1px solid transparent;
+  }
+
+  .card-cta-solid:hover { background: var(--teal-light); }
+
+  .card-cta-call {
+    border: 1px solid rgba(255,255,255,.3);
+    color: var(--white);
+    background: rgba(255,255,255,.08);
+  }
+
+  .card-cta-call:hover { background: rgba(255,255,255,.18); }
+
+  /* COMPARISON TABLE */
+  .compare-wrap {
+    background: var(--white);
+    border: 1px solid var(--ink-20);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .875rem;
+  }
+
+  .compare-table th {
+    background: var(--teal-deep);
+    color: rgba(255,255,255,.8);
+    font-weight: 400;
+    font-size: .75rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .85rem 1.25rem;
+    text-align: left;
+  }
+
+  .compare-table th:first-child { color: var(--white); font-size: .8rem; letter-spacing: .02em; text-transform: none; font-family: var(--serif); font-size: 1rem; }
+
+  .compare-table td {
+    padding: .9rem 1.25rem;
+    border-bottom: 1px solid var(--ink-20);
+    color: var(--ink);
+    font-weight: 300;
+    vertical-align: middle;
+  }
+
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:hover td { background: var(--teal-pale); }
+
+  .compare-table td:first-child {
+    font-weight: 500;
+    color: var(--teal-deep);
+  }
+
+  .compare-table td:nth-child(2) {
+    font-weight: 500;
+    color: var(--teal-mid);
+    font-size: 1rem;
+    letter-spacing: -.01em;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 500;
+    padding: .15rem .55rem;
+    border-radius: 100px;
+    letter-spacing: .03em;
+  }
+
+  .tag-monthly { background: #EEEDFE; color: #3C3489; }
+  .tag-onetime { background: var(--teal-pale); color: var(--teal-mid); }
+
+  /* FOOTER CTA */
+  .footer-cta {
+    background: var(--teal-deep);
+    border-radius: 16px;
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .footer-cta h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--white);
+    margin-bottom: .75rem;
+    font-weight: 400;
+  }
+
+  .footer-cta p {
+    font-size: .95rem;
+    font-weight: 300;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .footer-cta-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-white {
+    background: var(--white);
+    color: var(--teal-deep);
+    padding: .75rem 1.75rem;
+    border-radius: 100px;
+    font-size: .875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background .2s;
+  }
+
+  .btn-white:hover { background: var(--teal-pale); }
+
+  .btn-ghost-white {
+    border: 1px solid rgba(255,255,255,.35);
+    color: rgba(255,255,255,.85);
+    padding: .75rem 1.75rem;
+    border-radius: 100px;
+    font-size: .875rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .2s;
+  }
+
+  .btn-ghost-white:hover { border-color: rgba(255,255,255,.7); color: var(--white); }
+
+  /* SITE FOOTER */
+  footer {
+    border-top: 1px solid var(--ink-20);
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer .footer-brand {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--teal-deep);
+  }
+
+  footer p {
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--ink-60);
+  }
+
+  footer a {
+    font-size: .8rem;
+    color: var(--ink-60);
+    text-decoration: none;
+  }
+
+  footer a:hover { color: var(--teal-mid); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp .5s ease both; }
+  .hero h1      { animation: fadeUp .55s .08s ease both; }
+  .hero-sub     { animation: fadeUp .55s .16s ease both; }
+
+  /* RESPONSIVE */
+  @media (max-width: 680px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { display: none; }
+    .hero { padding: 3.5rem 1.25rem 2.5rem; }
+    .section-wrap { padding: 0 1.25rem 3rem; }
+    .cards-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Swell</a>
+  <ul class="nav-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/work">Work</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="mailto:hello@swellmarketing.agency" class="nav-cta">Talk to us</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <span class="hero-eyebrow">swellmarketing.agency</span>
+  <h1>Be found by AI.<br><em>Not buried by it.</em></h1>
+  <p class="hero-sub">GEO retainers, entity builds, and white-label fulfillment for brands that need to be cited — not just ranked.</p>
+</section>
+
+<div class="section-wrap">
+
+  <!-- RETAINERS -->
+  <div class="section-header">
+    <h2>Monthly retainers</h2>
+    <span>Cancel anytime</span>
+  </div>
+
+  <div class="cards-grid">
+
+    <div class="card">
+      <span class="card-badge">Starter</span>
+      <p class="card-name">GEO Starter</p>
+      <p class="card-price">$1,500</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">AI citation audit, entity optimization, monthly reporting. The entry point to Swell's GEO system.</p>
+      <a href="/checkout/geo-starter" class="card-cta card-cta-outline">Get started &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Growth</span>
+      <p class="card-name">GEO Growth</p>
+      <p class="card-price">$3,500</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">Full GEO + SEO retainer with content silo build, creator outreach, and weekly Atlas reports.</p>
+      <a href="/checkout/geo-growth" class="card-cta card-cta-outline">Get started &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Authority</span>
+      <p class="card-name">GEO Authority</p>
+      <p class="card-price">$6,500</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">Full-stack GEO execution — entity build, content silo, schema fixes, LLM citation audit, weekly Atlas reporting. Swell does everything.</p>
+      <a href="/checkout/geo-authority" class="card-cta card-cta-outline">Get started &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Embedded</span>
+      <p class="card-name">Fractional Chief GEO Officer</p>
+      <p class="card-price">$7,500</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">Senior Swell strategist embedded 10 hrs/month. Owns your GEO roadmap, attends leadership meetings, presents to your board.</p>
+      <a href="https://calendly.com/swell" class="card-cta card-cta-outline">Book a call &rarr;</a>
+    </div>
+
+    <div class="card featured">
+      <span class="card-badge">Most popular</span>
+      <p class="card-name">AI Visibility Domination</p>
+      <p class="card-price">$8,500</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">GEO + paid media + creator outreach running simultaneously. A full Share of Model attack across every channel that influences AI answers.</p>
+      <a href="/checkout/ai-visibility-domination" class="card-cta card-cta-solid">Get started &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">White-label</span>
+      <p class="card-name">White-Label GEO Partner</p>
+      <p class="card-price">$10,000</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">Swell delivers GEO under your agency's brand. Built for SEO agencies adding GEO capability without building an internal team.</p>
+      <a href="https://calendly.com/swell" class="card-cta card-cta-outline">Book a call &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Enterprise</span>
+      <p class="card-name">Enterprise GEO Command</p>
+      <p class="card-price">$15,000</p>
+      <p class="card-cadence">per month</p>
+      <hr class="card-divider">
+      <p class="card-desc">Multi-brand or multi-market GEO. Dedicated Atlas team, weekly deliverables, custom attribution dashboard, LLM citation tracking across 5 models.</p>
+      <a href="https://calendly.com/swell" class="card-cta card-cta-outline">Book a call &rarr;</a>
+    </div>
+
+  </div>
+
+  <!-- ONE-TIME -->
+  <div class="section-header">
+    <h2>One-time projects</h2>
+    <span>Fixed scope, fixed price</span>
+  </div>
+
+  <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); margin-bottom: 3.5rem;">
+
+    <div class="card">
+      <span class="card-badge">Audit</span>
+      <p class="card-name">GEO Infrastructure Audit</p>
+      <p class="card-price">$2,500</p>
+      <p class="card-cadence">one-time</p>
+      <hr class="card-divider">
+      <p class="card-desc">Entity authority gaps, AI citation blockers, schema diagnosis. No call required — buy and Swell delivers within 5 business days.</p>
+      <a href="/checkout/geo-audit" class="card-cta card-cta-outline">Buy now &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Infrastructure</span>
+      <p class="card-name">GEO + Brand Entity Build</p>
+      <p class="card-price">$12,500</p>
+      <p class="card-cadence">one-time</p>
+      <hr class="card-divider">
+      <p class="card-desc">Full entity infrastructure built from scratch — JSON-LD, Wikidata, sameAs graph, llms.txt, Crunchbase, schema, seeding across 10+ citation sources.</p>
+      <a href="/checkout/geo-brand-entity-build" class="card-cta card-cta-outline">Buy now &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-badge">Agency OS</span>
+      <p class="card-name">Agency GEO OS Setup</p>
+      <p class="card-price">$18,000</p>
+      <p class="card-cadence">one-time</p>
+      <hr class="card-divider">
+      <p class="card-desc">Atlas OS installed in your Notion workspace — custom agent personas, runbooks, SOPs, and team training included. Recurring support tier available.</p>
+      <a href="https://calendly.com/swell" class="card-cta card-cta-outline">Book a call &rarr;</a>
+    </div>
+
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="section-header">
+    <h2>Full comparison</h2>
+  </div>
+
+  <div class="compare-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Offer</th>
+          <th>Price</th>
+          <th>Billing</th>
+          <th>Best for</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GEO Starter</td>
+          <td>$1,500</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Brands starting GEO with limited budget</td>
+        </tr>
+        <tr>
+          <td>GEO Growth</td>
+          <td>$3,500</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Growing brands needing content + GEO together</td>
+        </tr>
+        <tr>
+          <td>GEO Infrastructure Audit</td>
+          <td>$2,500</td>
+          <td><span class="tag tag-onetime">One-time</span></td>
+          <td>Brands that need a diagnosis before committing</td>
+        </tr>
+        <tr>
+          <td>GEO Authority</td>
+          <td>$6,500</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Established brands wanting full-service GEO</td>
+        </tr>
+        <tr>
+          <td>Fractional Chief GEO Officer</td>
+          <td>$7,500</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Companies that need strategy, not execution</td>
+        </tr>
+        <tr>
+          <td>AI Visibility Domination</td>
+          <td>$8,500</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Brands ready to dominate Share of Model</td>
+        </tr>
+        <tr>
+          <td>White-Label GEO Partner</td>
+          <td>$10,000</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Agencies reselling GEO under their brand</td>
+        </tr>
+        <tr>
+          <td>GEO + Brand Entity Build</td>
+          <td>$12,500</td>
+          <td><span class="tag tag-onetime">One-time</span></td>
+          <td>Brands with zero entity infrastructure</td>
+        </tr>
+        <tr>
+          <td>Enterprise GEO Command</td>
+          <td>$15,000</td>
+          <td><span class="tag tag-monthly">Monthly</span></td>
+          <td>Multi-brand, multi-market enterprises</td>
+        </tr>
+        <tr>
+          <td>Agency GEO OS Setup</td>
+          <td>$18,000</td>
+          <td><span class="tag tag-onetime">One-time</span></td>
+          <td>Agencies building a GEO delivery system</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER CTA -->
+  <div class="footer-cta">
+    <h2>Not sure where to start?</h2>
+    <p>Start with the $2,500 audit. No call required. Swell delivers a full GEO diagnosis in 5 business days — then you decide.</p>
+    <div class="footer-cta-btns">
+      <a href="/checkout/geo-audit" class="btn-white">Buy the audit — $2,500</a>
+      <a href="mailto:hello@swellmarketing.agency" class="btn-ghost-white">Email us instead</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span class="footer-brand">Swell Marketing Agency</span>
+  <p>swellmarketing.agency &middot; All retainers cancel anytime</p>
+  <div style="display:flex;gap:1.25rem">
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+    <a href="mailto:hello@swellmarketing.agency">hello@swellmarketing.agency</a>
+  </div>
+</footer>
+
+</body>
+</html>

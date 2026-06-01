@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="base:app_id" content="6a1834c7660a3f727dea7030" />
+<meta name="base:app_id" content="6a0ada777abfff0aca7b16f5" />
+<title>Checkout — Fractional Chief GEO Officer · swellmarketing.agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --teal-deep: #04342C; --teal-mid: #0F6E56; --teal-bright: #1D9E75;
+    --teal-light: #5DCAA5; --teal-pale: #E1F5EE;
+    --ink: #0D1A14; --ink-60: rgba(13,26,20,.6); --ink-20: rgba(13,26,20,.12);
+    --surface: #F7FBF9; --white: #FFFFFF;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { font-size:16px; }
+  body { font-family: var(--sans); background: var(--surface); color: var(--ink); min-height: 100vh; }
+  a { color: inherit; }
+
+  .page { display:grid; grid-template-columns:1fr 1fr; min-height:100vh; }
+  .left { padding:3rem 2.5rem; border-right:1px solid var(--ink-20); display:flex; flex-direction:column; }
+  .right { padding:3rem 2.5rem; background:var(--white); }
+  .brand { font-family:var(--serif); font-size:1.1rem; color:var(--teal-deep); text-decoration:none; display:block; margin-bottom:2.5rem; }
+  .badge { display:inline-block; font-size:.7rem; font-weight:500; letter-spacing:.07em; text-transform:uppercase; padding:.25rem .75rem; border-radius:100px; background:var(--teal-pale); color:var(--teal-mid); margin-bottom:1rem; }
+  .offer-name { font-family:var(--serif); font-size:1.9rem; color:var(--teal-deep); line-height:1.15; margin-bottom:.75rem; font-weight:400; }
+  .price-row { display:flex; align-items:baseline; gap:.4rem; margin-bottom:1.5rem; }
+  .price { font-size:2.4rem; font-weight:300; color:var(--teal-deep); letter-spacing:-.03em; }
+  .cadence { font-size:.9rem; color:var(--ink-60); font-weight:300; }
+  .includes-label { font-size:.72rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-60); margin-bottom:.75rem; }
+  .includes { list-style:none; display:flex; flex-direction:column; gap:.55rem; margin-bottom:2rem; }
+  .includes li { font-size:.9rem; color:var(--ink-60); font-weight:300; display:flex; align-items:flex-start; gap:.6rem; line-height:1.5; }
+  .chk { color:var(--teal-bright); font-size:1rem; flex-shrink:0; }
+  .trust { display:flex; gap:1.5rem; margin-top:auto; padding-top:2rem; border-top:1px solid var(--ink-20); flex-wrap:wrap; }
+  .trust-item { font-size:.8rem; color:var(--ink-60); font-weight:300; display:flex; align-items:center; gap:.35rem; }
+  .trust-icon { font-size:1rem; }
+  .form-section-label { font-size:.72rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-60); margin-bottom:1rem; margin-top:1.5rem; }
+  .form-section-label:first-child { margin-top:0; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+  .form-group { margin-bottom:.85rem; }
+  .form-group label { display:block; font-size:.82rem; color:var(--ink-60); font-weight:400; margin-bottom:.3rem; }
+  .form-group input { width:100%; height:40px; padding:0 .85rem; border:1px solid var(--ink-20); border-radius:8px; font-size:.9rem; font-family:var(--sans); color:var(--ink); background:var(--surface); outline:none; transition:border .2s; }
+  .form-group input:focus { border-color:var(--teal-mid); }
+  .card-mock { background:var(--surface); border:1px solid var(--ink-20); border-radius:8px; padding:.75rem 1rem; display:flex; align-items:center; justify-content:space-between; margin-bottom:.85rem; }
+  .card-number { font-size:.9rem; color:var(--ink-60); letter-spacing:.1em; font-weight:300; }
+  .card-brands { display:flex; gap:.4rem; }
+  .brand-pill { font-size:.65rem; font-weight:600; padding:.18rem .5rem; border-radius:3px; }
+  .visa { background:#1A1F71; color:#fff; }
+  .mc { background:#EB001B; color:#fff; }
+  .amex { background:#2E77BC; color:#fff; }
+  .order-summary { background:var(--teal-pale); border-radius:10px; padding:1rem 1.1rem; margin-bottom:1.5rem; }
+  .os-row { display:flex; justify-content:space-between; font-size:.85rem; padding:.3rem 0; }
+  .os-row span:first-child { color:var(--ink-60); font-weight:300; }
+  .os-row span:last-child { font-weight:500; color:var(--teal-deep); }
+  .os-total { border-top:1px solid rgba(13,26,20,.15); margin-top:.4rem; padding-top:.6rem; }
+  .os-total span { font-size:1rem !important; color:var(--teal-deep) !important; font-weight:500 !important; }
+  .cta-btn { width:100%; padding:.85rem; background:var(--teal-mid); color:var(--white); border:none; border-radius:10px; font-size:.95rem; font-weight:500; cursor:pointer; font-family:var(--sans); letter-spacing:.01em; transition:background .2s; text-decoration:none; display:block; text-align:center; margin-bottom:.65rem; }
+  .cta-btn:hover { background:var(--teal-deep); }
+  .fine-print { font-size:.75rem; color:var(--ink-60); text-align:center; line-height:1.6; font-weight:300; }
+  .fine-print a { color:var(--ink-60); text-decoration:underline; }
+  .stripe-row { display:flex; align-items:center; justify-content:center; gap:.4rem; font-size:.75rem; color:var(--ink-60); margin-top:1rem; font-weight:300; }
+  @media(max-width:720px){
+    .page { grid-template-columns:1fr; }
+    .left { border-right:none; border-bottom:1px solid var(--ink-20); padding:2rem 1.25rem; }
+    .right { padding:2rem 1.25rem; }
+    .form-row { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="left">
+    <a href="https://swellmarketing.agency" class="brand">Swell</a>
+    <span class="badge">Monthly</span>
+    <p class="offer-name">Fractional Chief GEO Officer</p>
+    <div class="price-row">
+      <span class="price">$7,500</span>
+      <span class="cadence">/mo</span>
+    </div>
+    <p class="includes-label">What's included</p>
+    <ul class="includes"><li><span class="chk">&#10003;</span> Senior strategist embedded 10 hrs/mo</li>
+<li><span class="chk">&#10003;</span> GEO roadmap ownership</li>
+<li><span class="chk">&#10003;</span> Leadership meeting attendance</li>
+<li><span class="chk">&#10003;</span> Board-ready reporting</li>
+<li><span class="chk">&#10003;</span> Direct Slack access</li></ul>
+    <div class="trust">
+      <span class="trust-item"><span class="trust-icon">&#128274;</span> SSL secured</span>
+      <span class="trust-item"><span class="trust-icon">&#9203;</span> Kickoff within 24 hrs</span>
+      <span class='trust-item'><span class='trust-icon'>&#8635;</span> Cancel anytime</span>
+      <span class="trust-item"><span class="trust-icon">&#10003;</span> 40+ brands served</span>
+    </div>
+  </div>
+  <div class="right" id="payment-form">
+    <div class="order-summary">
+      <div class="os-row"><span>Product</span><span>Fractional Chief GEO Officer</span></div>
+      <div class="os-row"><span>Billing</span><span>Monthly</span></div>
+      <div class="os-row os-total"><span>Total today</span><span>$7,500</span></div>
+    </div>
+    <p class="form-section-label">Your details</p>
+    <div class="form-row">
+      <div class="form-group"><label>First name</label><input type="text" placeholder="Jane"></div>
+      <div class="form-group"><label>Last name</label><input type="text" placeholder="Smith"></div>
+    </div>
+    <div class="form-group"><label>Work email</label><input type="email" placeholder="jane@company.com"></div>
+    <div class="form-group"><label>Company <span style="font-weight:300;font-size:.8rem;">(optional)</span></label><input type="text" placeholder="Acme Inc."></div>
+    
+    <a href="https://calendly.com/swell" class="cta-btn">Book a discovery call &rarr;</a>
+    <p class="fine-print">By completing your purchase you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.<br>Billed monthly. Cancel anytime — no penalty.</p>
+    <div class="stripe-row">&#128274; Secured by Stripe &middot; PCI DSS compliant</div>
+  </div>
+</div>
+</body>
+</html>
