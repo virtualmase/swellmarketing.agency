@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://swellmarketing.xyz",
+      "permanent": true
+    }
+  ]
+}
