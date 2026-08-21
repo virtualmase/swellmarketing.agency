@@ -1,8 +1,78 @@
 {
   "redirects": [
     {
+      "source": "/pricing/:path*",
+      "destination": "https://swellmarketing.xyz/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/roadmap/:path*",
+      "destination": "https://swellmarketing.xyz/roadmap.html",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/agency-geo-os-setup/:path*",
+      "destination": "https://swellmarketing.xyz/services/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/ai-visibility-domination/:path*",
+      "destination": "https://swellmarketing.xyz/resources/ai-visibility/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/enterprise-geo-command/:path*",
+      "destination": "https://swellmarketing.xyz/services/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/fractional-cgeo/:path*",
+      "destination": "https://swellmarketing.xyz/services/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/geo-audit/:path*",
+      "destination": "https://swellmarketing.xyz/geo-audit/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/geo-authority/:path*",
+      "destination": "https://swellmarketing.xyz/services/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/geo-brand-entity-build/:path*",
+      "destination": "https://swellmarketing.xyz/services/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/geo-growth/:path*",
+      "destination": "https://swellmarketing.xyz/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/geo-starter/:path*",
+      "destination": "https://swellmarketing.xyz/geo-audit/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/white-label-geo-partner/:path*",
+      "destination": "https://swellmarketing.xyz/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you/:path*",
+      "destination": "https://swellmarketing.xyz/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://swellmarketing.xyz/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
-      "destination": "https://swellmarketing.xyz",
+      "destination": "https://swellmarketing.xyz/",
       "permanent": true
     }
   ]
